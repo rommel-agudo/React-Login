@@ -3,6 +3,7 @@ import { IonHeader, IonToolbar, IonTitle, IonContent, IonList, IonItem, IonLabel
 import './Home.css';
 type State = {
   username: string | null,
+  email: string | null
   password: string | null
 }
 
@@ -13,6 +14,7 @@ export default class Home extends Component<{},State> {
     super(props);
     this.state = {
       username: null,
+      email: null,
       password: null
     }
     this.signupFormRef = React.createRef();
@@ -33,6 +35,11 @@ export default class Home extends Component<{},State> {
               <IonItem>
                 <IonLabel color="primary">Username</IonLabel>
                 <IonInput value={this.state.username} name="username" type="text" required>
+                </IonInput>
+              </IonItem>
+              <IonItem>
+                <IonLabel color="primary">Email Address</IonLabel>
+                <IonInput value={this.state.email} name="email" type="email" required>
                 </IonInput>
               </IonItem>
               <IonItem>
