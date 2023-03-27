@@ -9,6 +9,7 @@ type State = {
 }
 
 //This line fixed the code
+//This line fixed the login bug
 export default class Login extends Component<{},State> {
   signupFormRef: React.Ref<HTMLFormElement>
 
