@@ -8,6 +8,7 @@ type State = {
   password: string | null
 }
 
+//This line fixed the code
 export default class Login extends Component<{},State> {
   signupFormRef: React.Ref<HTMLFormElement>
 
